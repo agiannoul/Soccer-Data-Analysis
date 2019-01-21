@@ -58,5 +58,5 @@ classifier = tf.estimator.DNNClassifier(
 # Train our model, use the previously defined function my_input_fn
 # Input to training is a file with training example
 # Stop training after 16 iterations of train data (epochs)
-classifier.train(input_fn=lambda: my_input_fn(FILE_TRAIN, True, 180))
+classifier.train(input_fn=lambda: my_input_fn(FILE_TRAIN, True, 300))
 
